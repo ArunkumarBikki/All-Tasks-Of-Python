@@ -1,7 +1,6 @@
 # Assingment
 
 # Declaring different types of data types in python
-
 # int
 a = 10
 print(type(a))
@@ -43,201 +42,166 @@ print(type(details))
 
 a=10
 b=20
+# addition
+print(a + b)
+# subtraction
+print(a - b)
+# Multiplication
+print(a * b)
+# division
+print(a / b)
+# Exponentiation
+print(a ** b)
+# Modulo
+print(a % b)
+# Floor Division
+print(a // b) 
 
+# Comparison Operators
+# Equal
+print(a == b)  
+# Not Equal
+print(a != b)      
+ # Greater than
+print(a > b)   
+ # Less than
+print(a < b)      
+ # Greater than or equal to
+print(a >= b)
+# Less than or equal to
+print(a <= b)    
 
+# Logical Operators
+x = True
+y = False
+# Logical AND
+print(x and y)   
+# Logical OR
+print(x or y)   
+# Logical NOT  
+print(not x)     
 
+# Bitwise Operators
+c=4
+d=8
+# Bitwise AND
+print(c & d)
+ # Bitwise OR
+print(c | d)
+ # Bitwise XOR
+print(c ^ d)
+  # Bitwise NOT     
+print(~c)      
 
+# Assignment Operators
+a = 5
+# a = a + 5
+a += 5  
+print(a)
+# a = a - 3
+a -= 3  
+print(a)
+# a = a * 4
+a *= 4  
+print(a)
+# a = a / 2
+a /= 2  
+print(a)
+ # a = a % 3
+a %= 3  
+print(a)
+# a = a ** 2
+a **= 2  
+print(a)
+# a = a // 4
+a //= 4  
+print(a)
 
+#Conditional Statements in Python
+# example of if statement
+age = 20
+if age >= 18:
+    print("you are an adult")
+# example of if and else statements
+age = 17
+if age >= 18:
+    print("you are a major")
+else:
+    print("you are a minor")
+# Example of if,elif and else statements
+marks = 75
+if marks >= 85:
+    print("A-grade")
+elif marks >= 70:
+    print("B-grade")
+elif marks >= 55:
+    print("C-grade")
+else:
+    print("Fail")
 
+# Loop Statements in Python:
+# for loop
+for i in range(1, 6):
+    print(i)
+# while loop
+w = 3
+while w < 5:
+    print(w)
+    w += 1
 
+# Jump Statements:
+# break:
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+# continue
+for i in range(1, 10):
+    if i == 3:
+        continue
+    print(i)
+# pass
+for i in range(1, 10):
+    if i == 3:
+        pass
+    else:
+        print(i)
 
+# Functions in Python:
 
+firstName = "Arun"
+lastName = "Kumar"
+def name():
+    print(firstName, lastName)
 
+name()
 
+def addition(a, b):
+    print(a + b)
 
+addition(100, 100)
 
+age = 20
+def func():
+    return age
 
+res = func()
+print("The result is:", res)
 
+# Inbuilt Functions in Python
+# String Functions
+my_string = "Hello, World!"
+print(len(my_string))
+print(my_string.lower())
+print(my_string.upper())
+print(my_string.replace("World", "coders"))
 
+# list functions:
+# append():
+a = [1, 2, 3]
+a.append(4)
+print(a)
 
-
-
-
-# How to declare different types of data types
-# Operators
-# Conditional Statements - if and else statements, elif
-# Loops - while, for, jump statements - break, continue
-# Functions - Declaring a function and call a function, return statement usage
-# Inbuilt Functions - Atleast the most famous once - string and list
-
-
-# 1) Data Types in Pyt-----------------------------------------------------------------------
-# # 2) Operators in Python
-
-# # 1. Arthimetic Operators:
-# print(10 + 5)
-# print(10 - 5)
-# print(12 * 5)
-# print(16 / 4)
-# print(20 % 3)
-# print(12 ** 2)
-# print(16 // 4)
-
-# # 2. Assignment Operators:
-# x = 5
-# print(x)
-# y= 5
-# y += 10
-# print(y)
-# z = 15
-# z -= 5
-# print(z)
-# a = 15
-# a *= 5
-# print(a)
-# b = 15
-# b /= 5
-# print(b)
-# b = 15
-# b //= 5
-# print(b)
-
-# # 3. Comparison Operators
-# a = 10
-# b = 10
-# print(a == b)
-# print(a != b)
-# print(a > b)
-# print(a < b)
-# print(a >= b)
-# print(a <= b)
-
-# # 4. Logical Operators
-# x = 5
-# print(x > 3 and x < 10)
-# print(x > 2 or x <4)
-# print(not(x > 3 and x < 10))
-
-# # 5. Bitwise Operators
-# print(6 & 3)
-# print( 5 | 4)
-# print(5 ^ 7)
-# print(~5)
-# print(3 << 2)
-# print(8 >> 2)
-# # ----------------------------------------------------------------------------------------
-
-# # 3. Conditional Statements in Python:
-
-# # 1. If Statement:
-
-# a = 33
-# b = 200
-# if b > a:
-#     print("b is greater than a")
-
-# age = 18
-# if age >= 18:
-#     print("Major")
-
-# # 2. Elif Statement
-
-# x = 20
-# y = 30
-# if y > x:
-#     print("y is greater")
-# elif a == b:
-#     print("Both are equal")
-
-# # 3. Else Statement:
-
-# age = 25
-# if age < 18:
-#     print("Not eligible to vote")
-# elif age == 18:
-#     print("Ypu are eligible to apply for voter card")
-# else:
-#     print("You are eligible to vote")
-
-# # --------------------------------------------------------------------------------------
-
-# # 4. Loop Statements in Python:
-
-# # 1. While Loop:
-# i = 1
-# while(i <= 10):
-#     print(i)
-#     i = i + 1
-
-# # 2. For Loop:
-
-# for i in range(2, 3):
-#     for j in range(1, 11):
-#         print(i, "*", j, "=", i*j)
-
-# # Jump Statements:
-# # break:
-# for i in range(1, 11):
-#     if i == 5:
-#         break
-#     print(i)
-
-# # continue
-# for i in range(1, 20):
-#     if i == 13:
-#         continue
-#     print(i)
-
-# # pass:
-# for alphabet in "python":
-#     if alphabet == 'o':
-#         pass
-#     else:
-#         print(alphabet)
-
-# # ---------------------------------------------------------------------------------
-
-# # 5. Functions in Python:
-
-# firstName = "Naveena"
-# lastName = "Nandyala"
-# def name():
-#     print(firstName, lastName)
-
-# name()
-
-# def addition(a, b):
-#     print(a + b)
-
-# addition(100, 100)
-
-# age = 20
-# def func():
-#     return age
-
-# res = func()
-# print("The result is:", res)
-
-# # -------------------------------------------------------------------------------------------------
-
-# # 6. Inbulit Functions in Python:
-# # String Functions:
-# # 1) capitalize(): Uppercase the first letter in the string.
-# text ="python is a programming language"
-# x = text.capitalize()
-# print(x)
-
-# # 2) index(): 
-# txt = "Hello, welcome to my world"
-# y = txt.index("e")
-# print(y)
-
-# # list functions:
-# # 1) append():
-# a = [1, 2, 3]
-# a.append(4)
-# print(a)
-
-# # 2) count():
-# c = [1, 2, 3, 4, 5, 6, 7, 2, 3, 2, 5, 7, 2]
-# print(c.count(2))
+# count():
+b = [1, 2, 3, 4, 5, 6, 7, 2, 3, 2, 5, 3 , 7, 2]
+print(b.count(3))
