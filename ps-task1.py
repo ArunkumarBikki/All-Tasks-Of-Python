@@ -19,6 +19,16 @@ else:
     print(f"{year} is not a Leap Year")
 
 # Write a program to classify a character entered by the user as a vowel, consonant, or neither.
+char = input("Enter a single character").lower()
+if len (char)==1:
+    if char in 'aeiou':
+        print("Vowel")
+    elif char.isalpha():
+        print("Consonant")
+    else:
+        print("Neither or special character")
+else:
+    print("Invalid input")
 
 # Calculate the grade of a student based on the marks they score: 
 marks = float(input("Enter your marks:"))
