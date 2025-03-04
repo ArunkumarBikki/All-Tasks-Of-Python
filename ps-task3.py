@@ -51,3 +51,27 @@ else:
             print(f'{perfect} is a perfect number')
         else:
             print(f'{perfect} is not a perfect number')
+
+# GCD
+a = int(input("Enter the first number"))
+b = int(input("Enter the second number"))
+while b > 0:
+    rem = a % b
+    a = b
+    b = rem
+GCD = a
+print("GCD of two numbers is:", GCD)
+
+# LCM
+x = int(input("Enter the first number:"))
+y = int(input("Enter the second number"))
+if x > y:
+    big = x
+else:
+    big = y
+while True:
+    if (big % x == 0) and (big % y == 0):
+        LCM = big
+        break
+    big = big + 1
+print("LCM of two numbers is:", LCM)
